@@ -50,9 +50,9 @@ const coreSkills = [
 const Experience = () => {
   const [certificateOpen, setCertificateOpen] = useState(false);
   return (
-   <section
+    <section
       id="experience"
-      className="relative py-18 sm:py-20- px-5 sm:px-8 md:px-12 scroll-mt-8"
+      className="relative py-18 sm:py-20 px-5 sm:px-8 md:px-12 scroll-mt-10"
     >
       <div className="max-w-6xl mx-auto">
         {/* Label */}
@@ -65,7 +65,10 @@ const Experience = () => {
         </h2>
 
         {/* Business Experience */}
-        <div className="mb-16 rounded-2xl border border-white/10 border-t-emerald-400/40 bg-black/30 backdrop-blur-md p-6 sm:p-8">
+        <div
+          className="mb-16 -mx-5 sm:-mx-8 md:-mx-12 px-5 sm:px-8 md:px-12 py-12"
+          style={{ backgroundColor: "#04120a" }}
+        >
           <div className="flex items-start gap-4 mb-5">
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-400/10 border border-emerald-400/30 text-emerald-400">
               <Briefcase size={18} />

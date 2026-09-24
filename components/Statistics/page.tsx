@@ -10,7 +10,10 @@ const stats = [
 
 const Stat = () => {
   return (
-    <section className="relative py-4 sm:py-6 px-5 sm:px-8 md:px-12">
+    <section
+      className="relative py-16 sm:py-20 px-5 sm:px-8 md:px-12"
+      style={{ backgroundColor: "#04120a" }}
+    >
       <div className="max-w-5xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
         {stats.map(({ icon: Icon, value, label }) => (
           <div

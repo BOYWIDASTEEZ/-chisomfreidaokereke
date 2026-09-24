@@ -54,7 +54,10 @@ const traits = [
 
 const About = () => {
   return (
-    <section id="about" className="relative py-16 sm:py-20 px-5 sm:px-8 md:px-12 scroll-mt-6">
+    <section
+      id="about"
+      className="relative py-18 sm:py-20 px-5 sm:px-8 md:px-12 scroll-mt-10"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Intro */}
         <div className="max-w-2xl mb-16">
@@ -77,8 +80,11 @@ const About = () => {
         </div>
 
         {/* What I Do */}
-        <div className="mb-16">
-          <h3 className="text-sm md:text-lg font-semibold tracking-widest text-gray-500 mb-6">
+        <div
+          className="mb-16 -mx-5 sm:-mx-8 md:-mx-12 px-5 sm:px-8 md:px-12 py-12"
+          style={{ backgroundColor: "#04120a" }}
+        >
+          <h3 className="text-sm font-semibold tracking-widest text-emerald-400/70 mb-6">
             WHAT I DO
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
