@@ -2,6 +2,16 @@
 
 import React, { useState, useEffect } from 'react'
 import { ArrowUpRight, ArrowRight, Code2, Briefcase } from "lucide-react";
+import { SiGmail, SiWhatsapp, SiGooglecalendar, SiHubspot } from "react-icons/si";
+import { Database } from "lucide-react";
+
+const tools = [
+  { name: "Gmail", icon: SiGmail, color: "#EA4335" },
+  { name: "WhatsApp", icon: SiWhatsapp, color: "#25D366" },
+  { name: "Calendly", icon: SiGooglecalendar, color: "#34D399" },
+  { name: "HubSpot", icon: SiHubspot, color: "#FF7A59" },
+  { name: "CRM", icon: Database, color: "#34D399" },
+];
 
 const roles = [
   "Appointment Setter",
@@ -59,11 +69,11 @@ const Hero = () => {
           </span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
-            Hi, I&apos;m
+            Behind every booked call,
             <br />
-            Freida{" "}
+            there&apos;s a system.{" "}
             <span className="bg-gradient-to-r from-emerald-300 to-emerald-500 bg-clip-text text-transparent">
-              Okereke
+              I&apos;m it.
             </span>
           </h1>
           <p className="mt-6 text-sm sm:text-base text-gray-400 max-w-md leading-relaxed">
@@ -71,30 +81,36 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex items-center gap-4 flex-wrap">
-            <button className="flex items-center gap-2 rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-300 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(52,211,153,0.4)]">
+            <a
+             href="#contact"
+             className="flex items-center gap-2 rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-300 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(52,211,153,0.4)]">
               <Briefcase size={16} />
               Hire Me
-            </button>
+            </a>
 
-            <button className="flex items-center gap-2 rounded-full border border-emerald-400/50 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-400/10 hover:scale-105 transition-all duration-300">
+            <a 
+             href="#projects"
+             className="flex items-center gap-2 rounded-full border border-emerald-400/50 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-400/10 hover:scale-105 transition-all duration-300">
               <ArrowUpRight size={16} />
               View My Work
-            </button>
+            </a>
 
-            <button className="flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">
+            <a 
+             href="#about"
+             className="flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">
               About Me
               <ArrowRight size={16} />
-            </button>
+            </a>
           </div>
 
-          {/* Tech stack */}
+          {/* Tools */}
           <div className="mt-16 flex gap-8 flex-wrap">
-            {["React", "Next.js", "Tailwind", "TypeScript", "GitHub"].map((tech) => (
-              <div key={tech} className="flex flex-col items-center gap-2">
-                <div className="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center text-xs text-gray-300">
-                  {tech.slice(0, 2)}
+            {tools.map(({ name, icon: Icon, color }) => (
+              <div key={name} className="flex flex-col items-center gap-2">
+                <div className="h-10 w-10 rounded-full border border-white/10 flex items-center justify-center">
+                  <Icon size={18} color={color} />
                 </div>
-                <span className="text-xs text-gray-500">{tech}</span>
+                <span className="text-xs text-gray-500">{name}</span>
               </div>
             ))}
           </div>
