@@ -189,7 +189,7 @@ const Experience = () => {
             {/* Image */}
             <div className="rounded-xl overflow-hidden border border-white/10">
               <img
-                src="/images/Freida-certificate.jpeg"
+                src="/Images/Freida-certificate.jpeg"
                 alt="Appointment Setting Certification"
                 className="w-full h-auto object-contain max-h-[75vh]"
               />
