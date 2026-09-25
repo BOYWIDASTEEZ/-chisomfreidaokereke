@@ -104,7 +104,7 @@ export default function Projects() {
             return (
               <div
                 key={project.number}
-                className="rounded-2xl border border-white/10 bg-black/30 backdrop-blur-md overflow-hidden hover:border-emerald-400/30 transition-all duration-300"
+                className="rounded-2xl border border-emerald-400/40 lg:border-white/10 bg-black/30 backdrop-blur-md overflow-hidden hover:border-emerald-400/30 transition-all duration-300"
               >
                 {/* Visual header */}
                 <div className="relative h-40 bg-black/40 border-b border-white/10 flex items-center justify-center overflow-hidden">
