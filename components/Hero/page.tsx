@@ -118,13 +118,20 @@ const Hero = () => {
 
         {/* Right column — portrait */}
         <div className="relative flex justify-center">
-          <div className="relative w-full max-w-md aspect-[3/4] rounded-3xl overflow-hidden">
-            {/* Swap this for your friend's real photo */}
+          <div className="relative w-full max-w-md aspect-[3/4] rounded-3xl overflow-hidden border border-white/10">
             <img
               src="/Images/Freida-portrait.jpeg"
-              alt="Portrait"
+              alt="Chisom Freida Okereke"
               className="w-full h-full object-cover"
             />
+
+            {/* Location badge */}
+            <div className="absolute bottom-5 right-5 flex items-center gap-2 rounded-full bg-black/70 backdrop-blur-md border border-emerald-400/30 px-4 py-2 shadow-lg">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_6px_2px_rgba(52,211,153,0.7)]" />
+              <span className="text-xs font-semibold text-white whitespace-nowrap">
+                Awka, Nigeria
+              </span>
+            </div>
           </div>
         </div>
       </div>
